@@ -30,8 +30,8 @@
                         <div>TC: {{ $train->train_code }}</div>
                         <div>Wagon: {{ $train->n_compartment }}</div>
                         {{-- ho sbagliato sulla tabella dovevo mettere is_cancelled --}}
-                        <div class="{{ ($train->is_delayed) ? 'text-danger' : (($train->on_schedule) ? 'text-success' : 'text-warning') }}"
-                        >Status: {{ ($train->is_delayed) ? 'cancelled' : (($train->on_schedule) ? 'on schedule' : 'delayed') }}</div>
+                        <div class="{{ ($train->is_cancelled) ? 'text-danger' : (($train->on_schedule) ? 'text-success' : 'text-warning') }}"
+                        >Status: {{ ($train->is_cancelled) ? 'cancelled' : (($train->on_schedule) ? 'on schedule' : 'delayed') }}</div>
                     </div>  
                 </div>
             @endforeach
