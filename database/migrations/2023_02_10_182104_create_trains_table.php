@@ -23,7 +23,7 @@ return new class extends Migration
             $table->string('train_code', 5);
             $table->tinyInteger('n_compartment');
             $table->boolean('on_schedule');
-            $table->boolean('is_delayed');
+            $table->boolean('is_cancelled');
             $table->timestamps();
         });
     }
