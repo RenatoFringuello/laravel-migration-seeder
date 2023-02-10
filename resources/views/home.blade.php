@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Trains</title>
+    <title>Frenitalia</title>
 
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -18,7 +18,8 @@
 <body class="bg-success">
 
     <main class="p-3">
-        <h1 class="text-center text-light">Trains</h1>
+        {{-- senza farlo apposta solo con 2 seed sono usciti praticamente solo treni in ritardo o cancellati --}}
+        <h1 class="text-center text-light pb-2">Frenitalia</h1>
         <div class="row g-3">
             @foreach ($trains as $train)
                 <div class="col-12 col-sm-6 col-md-4 col-xl-3">
